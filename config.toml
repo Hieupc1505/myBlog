@@ -1,5 +1,90 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
+author = "Hieupc09"
 
 theme = "loveit"
+
+[params]
+
+  defaultTheme = "dark"
+
+  gitRepo = ""
+  
+  fingerprint = ""
+ 
+  dateFormat = "2006-01-02"
+ 
+  title = "Learn code with me, go!"
+  
+  description = "This is J4U"
+  
+  images = []
+
+
+
+# Header config
+# 页面头部导航栏配置
+[params.header]
+  # desktop header mode ["fixed", "normal", "auto"]
+  # 桌面端导航栏模式 ["fixed", "normal", "auto"]
+  desktopMode = "fixed"
+  # mobile header mode ["fixed", "normal", "auto"]
+  # 移动端导航栏模式 ["fixed", "normal", "auto"]
+  mobileMode = "auto"
+  # Header title config
+  # 页面头部导航栏标题配置
+  [params.header.title]
+    # URL of the LOGO
+    # LOGO 的 URL
+    logo = ""
+    # title name
+    # 标题名称
+    name = "J4U - Learn Code"
+    # you can add extra information before the name (HTML format is supported), such as icons
+    # 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标
+    pre = ""
+    # you can add extra information after the name (HTML format is supported), such as icons
+    # 你可以在名称 (允许 HTML 格式) 之后添加其他信息, 例如图标
+    post = ""
+    # whether to use typeit animation for title name
+    # 是否为标题显示打字机动画
+    typeit = false
+  # Home page config
+  # 主页信息设置
+  [params.home]
+    # amount of RSS pages
+    # RSS 文章数目
+    rss = 10
+    # Home page profile
+    # 主页个人信息
+    [params.home.profile]
+      enable = true
+      # Gravatar Email for preferred avatar in home page
+      # Gravatar 邮箱，用于优先在主页显示的头像
+      gravatarEmail = ""
+      # URL of avatar shown in home page
+      # 主页显示头像的 URL
+      avatarURL = "/images/46.jpg"
+      # title shown in home page (HTML format is supported)
+      # 主页显示的网站标题 (支持 HTML 格式)
+      title = "Wellcome to Hieupc's Blog"
+      # subtitle shown in home page (HTML format is supported)
+      # 主页显示的网站副标题 (允许 HTML 格式)
+      subtitle = "Let's code with me"
+      # whether to use typeit animation for subtitle
+      # 是否为副标题显示打字机动画
+      typeit = true
+      # whether to show social links
+      # 是否显示社交账号
+      social = true
+      # disclaimer (HTML format is supported)
+      # 免责声明 (支持 HTML 格式)
+      disclaimer = ""
+    # Home page posts
+    # 主页文章列表
+    [params.home.posts]
+      enable = true
+      # special amount of posts in each home posts page
+      # 主页每页显示文章数量
+      paginate = 6
